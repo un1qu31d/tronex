@@ -9,20 +9,24 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.scss */ "./components/header/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.scss */ "./components/header/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "D:\\@MAliCD31E\\@Front-End_Developer\\#Projects\\#Freelance\\Tronx\\components\\header\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
-class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+const assetPrefix = next_config__WEBPACK_IMPORTED_MODULE_0___default()().publicRuntimeConfig.assetPrefix;
+
+class Header extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   componentDidMount() {
-    gsap__WEBPACK_IMPORTED_MODULE_1__["gsap"].to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.logo), {
+    gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.logo), {
       y: 0,
       duration: 1
     });
@@ -30,85 +34,85 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
   render() {
     return __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.header,
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.header,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 15
       },
       __self: this
     }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.logo,
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.logo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 16
       },
       __self: this
     }, __jsx("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 17
       },
       __self: this
     }, __jsx("img", {
-      src: "/logo.png",
+      src: "".concat(assetPrefix, "/logo.png"),
       alt: "",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      },
-      __self: this
-    }))), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.links,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
       },
       __self: this
-    }, __jsx("li", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, __jsx("span", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.label,
+    }))), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.links,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 19
       },
       __self: this
-    }, "menu"), __jsx("span", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.icon,
+    }, __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20
       },
       __self: this
-    })), __jsx("li", {
+    }, __jsx("li", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("span", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.label,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 22
       },
       __self: this
-    }, __jsx("span", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.label,
+    }, "menu"), __jsx("span", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.icon,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       },
       __self: this
-    }, "let's talk"), __jsx("span", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_2___default.a.icon,
+    })), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 25
+      },
+      __self: this
+    }, __jsx("span", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.label,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }, "let's talk"), __jsx("span", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.icon,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
       },
       __self: this
     })))));
@@ -129,95 +133,144 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.scss */ "./components/intro/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/config */ "./node_modules/next/dist/next-server/lib/runtime-config.js");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.scss */ "./components/intro/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "D:\\@MAliCD31E\\@Front-End_Developer\\#Projects\\#Freelance\\Tronx\\components\\intro\\index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
 
-class Intro extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+const assetPrefix = next_config__WEBPACK_IMPORTED_MODULE_0___default()().publicRuntimeConfig.assetPrefix;
+
+class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   componentDidMount() {
-    document.querySelectorAll(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief, " div:last-child")).forEach(brief => {
+    document.querySelectorAll(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " div:last-child")).forEach(brief => {
       brief.innerHTML = [...brief.innerText].map(char => "<span>".concat(char, "</span>")).join('');
     });
-    const introAnimation = gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].timeline();
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.intro, " > .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief, " div"), {
+    const wheelAnimation = gsap__WEBPACK_IMPORTED_MODULE_3__["gsap"].timeline();
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video), {
+      x: '-50%',
+      duration: 1,
+      ease: 'none'
+    });
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view), {
+      x: "100%",
+      duration: 1,
+      ease: 'none'
+    }, '-=1');
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.content), {
+      x: '0%',
+      duration: 1,
+      ease: 'none'
+    }, '-=1');
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.content, " .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view), {
+      x: "50%",
+      duration: 1,
+      ease: 'none'
+    }, '-=1');
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.bubble), {
+      x: '25%',
+      y: '25%',
+      duration: 0.75,
+      ease: 'none'
+    }, '-=0.75');
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.bubble, " .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view), {
+      x: "-25%",
+      y: "-25%",
+      duration: 0.75,
+      ease: 'none'
+    }, '-=0.75');
+    wheelAnimation.pause();
+    const introAnimation = gsap__WEBPACK_IMPORTED_MODULE_3__["gsap"].timeline();
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " div"), {
       top: 0,
       opacity: 1,
       stagger: 0.2,
       duration: 0.6,
       ease: 'slow(0.7, 0.7, false)'
     });
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief, " div:not(:last-child)"), {
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " div:not(:last-child)"), {
       top: -64,
       opacity: 0,
       stagger: 0.2,
       duration: 0.4,
       ease: 'slow(0.7, 0.7, false)'
     }, '+=1');
-    introAnimation.set(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief, " div:last-child"), {
+    introAnimation.set(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " div:last-child"), {
       display: 'grid',
       gridAutoFlow: 'column',
       justifyContent: 'space-around',
       lineHeight: '1em'
     }, "-=0.2");
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief), {
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief), {
       width: '72%',
       duration: 0.4,
       ease: 'slow(0.7, 0.7, false)'
     }, "-=0.2");
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief, " div:last-child"), {
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " div:last-child"), {
       fontSize: '10vw',
       duration: 0.2,
       ease: 'slow(0.7, 0.7, false)'
     }, '-=0.1');
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief), {
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief), {
       width: '92%',
       top: '100%',
       yPercent: -100,
       duration: 0.4,
       ease: 'slow(0.7, 0.7, false)'
     });
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.slide), {
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide), {
       height: 0,
       stagger: 0.2,
       duration: 0.6,
-      ease: 'slow(0.7, 0.7, false)'
+      ease: 'slow(0.7, 0.7, false)',
+      onStart: () => {
+        document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " video")).play();
+      }
     }, '-=0.2');
-    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.intro, " > .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief, " span"), {
+    introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro, " > .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " span"), {
       opacity: 0,
       stagger: 0.18,
       duration: 0,
-      ease: 'slow(0.7, 0.7, false)'
+      ease: 'slow(0.7, 0.7, false)',
+      onComplete: () => {
+        let wheelPointer = 0;
+        document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro)).addEventListener('wheel', event => {
+          if (event.wheelDeltaY < 0 && wheelPointer < 100) {
+            wheelPointer = Math.min(100, wheelPointer + 10 * (event.wheelDeltaY / -120));
+          }
+
+          if (event.wheelDeltaY > 0 && wheelPointer > 0) {
+            wheelPointer = Math.max(0, wheelPointer - 10 * (event.wheelDeltaY / 120));
+          }
+
+          wheelAnimation.progress(wheelPointer / 100);
+        });
+      }
     }, '-=1.2');
-    window.setTimeout(() => {
-      document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.video, " video")).addEventListener('click', event => {
-        event.target.play(); // event.target.muted = false;
-      });
-      document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.video, " video")).click();
-    }, introAnimation.duration() * 1000 - 1200);
   }
 
   render() {
     return __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.intro,
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 50
       },
       __self: this
     }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.video,
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 51
       },
       __self: this
     }, __jsx("video", {
@@ -226,166 +279,193 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       preload: "auto",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 52
       },
       __self: this
     }, __jsx("source", {
-      src: "/intro.mp4",
+      src: "".concat(assetPrefix, "/intro.mp4"),
       type: "video/mp4",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 53
       },
       __self: this
     })), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.view,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
-    }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 38
-      },
-      __self: this
-    }, __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    }, "this"), __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    }, "is"), __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 41
-      },
-      __self: this
-    }, "tronx")))), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, __jsx("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, beatae repellendus voluptates reiciendis quae porro, explicabo temporibus recusandae laborum, eaque nobis optio eligendi aperiam asperiores ipsam consequatur provident dignissimos error."), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.view,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.grid,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
-      },
-      __self: this
-    }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.cell,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51
-      },
-      __self: this
-    })), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54
-      },
-      __self: this
-    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 55
       },
       __self: this
-    }, "this"), __jsx("div", {
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
       __source: {
         fileName: _jsxFileName,
         lineNumber: 56
       },
       __self: this
-    }, "is"), __jsx("div", {
+    }, 'tronx'.split('').map((char, key) => __jsx("span", {
+      key: key,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
       },
       __self: this
-    }, "tronx")))), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.slides,
+    }, char))))), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.content,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 61
       },
       __self: this
-    }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.slide,
+    }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 62
       },
       __self: this
-    }), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.slide,
+    }, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, beatae repellendus voluptates reiciendis quae porro, explicabo temporibus recusandae laborum, eaque nobis optio eligendi aperiam asperiores ipsam consequatur provident dignissimos error."), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 65
       },
       __self: this
-    }), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.slide,
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.grid,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 66
       },
       __self: this
-    }), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.slide,
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.cell,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 67
       },
       __self: this
-    })), __jsx("tt", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.brief,
+    })), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: this
+    }, 'tronx'.split('').map((char, key) => __jsx("span", {
+      key: key,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 71
       },
       __self: this
+    }, char))))), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.bubble,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.circle,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76
+      },
+      __self: this
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }, 'tronx'.split('').map((char, key) => __jsx("span", {
+      key: key,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: this
+    }, char)))))), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.controller,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.volume, " ").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['status--off']),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85
+      },
+      __self: this
+    })), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slides,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
+      },
+      __self: this
+    }), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90
+      },
+      __self: this
+    }), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92
+      },
+      __self: this
+    }), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    })), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97
+      },
+      __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72
+        lineNumber: 98
       },
       __self: this
     }, "this"), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 99
       },
       __self: this
     }, "is"), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 100
       },
       __self: this
     }, "tronx")));
@@ -397,7 +477,7 @@ const mapStateToProps = state => ({
   intro_loading: state.intro_loading
 });
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Intro));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps)(Intro));
 
 /***/ }),
 
@@ -9446,6 +9526,36 @@ exports["default"] = Head;
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/next-server/lib/runtime-config.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/runtime-config.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var runtimeConfig;
+
+exports["default"] = function () {
+  return runtimeConfig;
+};
+
+function setConfig(configValue) {
+  runtimeConfig = configValue;
+}
+
+exports.setConfig = setConfig;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/next-server/lib/side-effect.js":
 /*!***************************************************************!*\
   !*** ./node_modules/next/dist/next-server/lib/side-effect.js ***!
@@ -13257,7 +13367,7 @@ const mapDispatchToProps = dispatch => ({
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5C%40MAliCD31E%5C%40Front-End_Developer%5C%23Projects%5C%23Freelance%5CTronx%5Cpages%5Cindex.js ***!
   \*********************************************************************************************************************************************************************/
@@ -13280,5 +13390,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
