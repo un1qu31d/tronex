@@ -593,8 +593,8 @@ template {
       place-content: center; }
       ._3Q9c-pq5xWxm_qg4pjhUm3 ._2D7KmtuYvOAwJVmh704fU7 ul li ._1gC-7PVTJOzznpCDE1iS4H {
         color: #c0c0c0; }
-      ._3Q9c-pq5xWxm_qg4pjhUm3 ._2D7KmtuYvOAwJVmh704fU7 ul li::first-letter {
-        text-transform: uppercase; }
+        ._3Q9c-pq5xWxm_qg4pjhUm3 ._2D7KmtuYvOAwJVmh704fU7 ul li ._1gC-7PVTJOzznpCDE1iS4H::first-letter {
+          text-transform: uppercase; }
 
 .tocOGNrxLb3wtv4pa9EVA {
   position: relative;

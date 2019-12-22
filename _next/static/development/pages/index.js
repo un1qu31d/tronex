@@ -13387,7 +13387,7 @@ const mapDispatchToProps = dispatch => ({
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5C%40MAliCD31E%5C%40Front-End_Developer%5C%23Projects%5C%23Freelance%5CTronx%5Cpages%5Cindex.js ***!
   \*********************************************************************************************************************************************************************/
@@ -13410,5 +13410,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

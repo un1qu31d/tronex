@@ -30,7 +30,7 @@ module.exports = {"header":"_3Q9c-pq5xWxm_qg4pjhUm3","logo":"_2r1VQiQr7y_loqy-qv
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974074914");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975116587");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974075271");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975117139");
           });
       }
     }
@@ -105,7 +105,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974035287");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975105133");
           });
       }
     }
@@ -142,7 +142,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974035279");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975105123");
           });
       }
     }
@@ -179,7 +179,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974036922");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975105568");
           });
       }
     }
@@ -216,7 +216,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974035266");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975105112");
           });
       }
     }

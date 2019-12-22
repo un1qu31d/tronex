@@ -30,7 +30,7 @@ module.exports = {"header":"_3Q9c-pq5xWxm_qg4pjhUm3","logo":"_2r1VQiQr7y_loqy-qv
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974074914");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975116587");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576974075271");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576975117139");
           });
       }
     }
@@ -77,4 +77,4 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
 /***/ })
 
 })
-//# sourceMappingURL=styles.d5a609e5151a357b29d6.hot-update.js.map
+//# sourceMappingURL=styles.1759598a3631b37b852e.hot-update.js.map
