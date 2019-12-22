@@ -30,6 +30,11 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       y: 0,
       duration: 1
     });
+    gsap__WEBPACK_IMPORTED_MODULE_2__["gsap"].to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.links, " li"), {
+      y: 0,
+      stagger: 0.2,
+      duration: 1
+    });
   }
 
   render() {
@@ -37,21 +42,21 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.header,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 16
       },
       __self: this
     }, __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.logo,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       },
       __self: this
     }, __jsx("a", {
       href: "#",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 18
       },
       __self: this
     }, __jsx("img", {
@@ -59,60 +64,60 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       alt: "",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 18
       },
       __self: this
     }))), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.links,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 20
       },
       __self: this
     }, __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 21
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 22
       },
       __self: this
     }, __jsx("span", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 23
       },
       __self: this
     }, "menu"), __jsx("span", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.icon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 24
       },
       __self: this
     })), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 26
       },
       __self: this
     }, __jsx("span", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.label,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 27
       },
       __self: this
     }, "let's talk"), __jsx("span", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_3___default.a.icon,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 28
       },
       __self: this
     })))));
@@ -163,6 +168,11 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     });
     wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view), {
       x: "100%",
+      duration: 1,
+      ease: 'none'
+    }, '-=1');
+    wheelAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " video"), {
+      scale: '1.4',
       duration: 1,
       ease: 'none'
     }, '-=1');
@@ -227,6 +237,9 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       duration: 0.4,
       ease: 'slow(0.7, 0.7, false)'
     });
+    introAnimation.set(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.controller), {
+      zIndex: '1'
+    }, "-=0.2");
     introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide), {
       height: 0,
       stagger: 0.2,
@@ -234,6 +247,11 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       ease: 'slow(0.7, 0.7, false)',
       onStart: () => {
         document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " video")).play();
+        document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.volume)).addEventListener('click', () => {
+          document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.volume)).classList.toggle(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['status--off']);
+          document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.volume)).classList.toggle(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['status--on']);
+          document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " video")).muted = !document.querySelector(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video, " video")).muted;
+        });
       }
     }, '-=0.2');
     introAnimation.to(".".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro, " > .").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief, " span"), {
@@ -252,7 +270,9 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
             wheelPointer = Math.max(0, wheelPointer - 10 * (event.wheelDeltaY / 120));
           }
 
-          wheelAnimation.progress(wheelPointer / 100);
+          if (event.wheelDeltaY < 0 || event.wheelDeltaY > 0) {
+            wheelAnimation.progress(wheelPointer / 100);
+          }
         });
       }
     }, '-=1.2');
@@ -263,14 +283,14 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.intro,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 58
       },
       __self: this
     }, __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.video,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 59
       },
       __self: this
     }, __jsx("video", {
@@ -279,7 +299,7 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       preload: "auto",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 60
       },
       __self: this
     }, __jsx("source", {
@@ -287,100 +307,65 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       type: "video/mp4",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 61
       },
       __self: this
     })), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 63
       },
       __self: this
     }, __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 64
       },
       __self: this
     }, 'tronx'.split('').map((char, key) => __jsx("span", {
       key: key,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 65
       },
       __self: this
     }, char))))), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.content,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 69
       },
       __self: this
     }, __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 62
+        lineNumber: 70
       },
       __self: this
     }, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, beatae repellendus voluptates reiciendis quae porro, explicabo temporibus recusandae laborum, eaque nobis optio eligendi aperiam asperiores ipsam consequatur provident dignissimos error."), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 73
       },
       __self: this
     }, __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.grid,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 74
       },
       __self: this
     }, __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.cell,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
-      },
-      __self: this
-    })), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 70
-      },
-      __self: this
-    }, 'tronx'.split('').map((char, key) => __jsx("span", {
-      key: key,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 71
-      },
-      __self: this
-    }, char))))), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.bubble,
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 75
       },
       __self: this
-    }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.circle,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 76
-      },
-      __self: this
-    }, __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 77
-      },
-      __self: this
-    }, __jsx("div", {
+    })), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
       __source: {
         fileName: _jsxFileName,
@@ -394,78 +379,113 @@ class Intro extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
         lineNumber: 79
       },
       __self: this
-    }, char)))))), __jsx("div", {
-      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.controller,
+    }, char))))), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.bubble,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83
+      },
+      __self: this
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.circle,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 84
       },
       __self: this
     }, __jsx("div", {
-      className: "".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.volume, " ").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['status--off']),
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.view,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 85
+      },
+      __self: this
+    }, __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['brief__title'],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: this
+    }, 'tronx'.split('').map((char, key) => __jsx("span", {
+      key: key,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87
+      },
+      __self: this
+    }, char)))))), __jsx("div", {
+      className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.controller,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "".concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.volume, " ").concat(_index_scss__WEBPACK_IMPORTED_MODULE_4___default.a['status--off']),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93
       },
       __self: this
     })), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slides,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87
+        lineNumber: 95
       },
       __self: this
     }, __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 96
       },
       __self: this
     }), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 98
       },
       __self: this
     }), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92
+        lineNumber: 100
       },
       __self: this
     }), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.slide,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 102
       },
       __self: this
     })), __jsx("div", {
       className: _index_scss__WEBPACK_IMPORTED_MODULE_4___default.a.brief,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 105
       },
       __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 106
       },
       __self: this
     }, "this"), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 107
       },
       __self: this
     }, "is"), __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 108
       },
       __self: this
     }, "tronx")));
@@ -13367,7 +13387,7 @@ const mapDispatchToProps = dispatch => ({
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5C%40MAliCD31E%5C%40Front-End_Developer%5C%23Projects%5C%23Freelance%5CTronx%5Cpages%5Cindex.js ***!
   \*********************************************************************************************************************************************************************/
@@ -13390,5 +13410,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[4,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

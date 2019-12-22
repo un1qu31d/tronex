@@ -30,7 +30,7 @@ module.exports = {"header":"_3Q9c-pq5xWxm_qg4pjhUm3","logo":"_2r1VQiQr7y_loqy-qv
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576897414563");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576974074914");
           });
       }
     }
@@ -46,7 +46,7 @@ module.exports = {"header":"_3Q9c-pq5xWxm_qg4pjhUm3","logo":"_2r1VQiQr7y_loqy-qv
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a_A","content":"_2exx9Gabl8JAkESV7PpFGu","bubble":"_3MwD_P4mtmU-nxaZg_0UDw","view":"_2vVczhTBxQI4RWVTPS75qP","brief__title":"_3_XE99p8e8fhIuxxFEKoJL","grid":"_2CIUQ7WuSYPXWzuhnZV16g","cell":"__KnrkeVO3Rn6bU8VPo68","circle":"_3-05xtxXqGdc93O1GMTcXg","slides":"hSR_K581ig3N6reRUsdwN","slide":"_1WbIMFRKTmt353oDP47vbY","brief":"_3DpmlKx_uXRrBUb6GEUkyw"};;
+module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a_A","content":"_2exx9Gabl8JAkESV7PpFGu","bubble":"_3MwD_P4mtmU-nxaZg_0UDw","view":"_2vVczhTBxQI4RWVTPS75qP","brief__title":"_3_XE99p8e8fhIuxxFEKoJL","grid":"_2CIUQ7WuSYPXWzuhnZV16g","cell":"__KnrkeVO3Rn6bU8VPo68","circle":"_3-05xtxXqGdc93O1GMTcXg","controller":"_3INbh30g8mWDiRh_rIckcB","volume":"_30nt2ZdZ_fza_jT0djBAda","status--on":"-VIb_0RWaoF9vIvhMlimY","status--off":"_3spRupkNGqbdtkNa_5-GIO","slides":"hSR_K581ig3N6reRUsdwN","slide":"_1WbIMFRKTmt353oDP47vbY","brief":"_3DpmlKx_uXRrBUb6GEUkyw"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -68,7 +68,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576897343671");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576974075271");
           });
       }
     }
@@ -105,7 +105,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576895330897");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576974035287");
           });
       }
     }
@@ -142,7 +142,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576895330890");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576974035279");
           });
       }
     }
@@ -179,7 +179,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576895331197");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576974036922");
           });
       }
     }
@@ -216,7 +216,7 @@ module.exports = {"intro":"tocOGNrxLb3wtv4pa9EVA","video":"_3LRKHy4okN4H4qAtRs0a
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1576895330883");
+            injectCss(link, link.href.split("?")[0] + "?unix=1576974035266");
           });
       }
     }
